@@ -1,16 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Restaurant Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff4e6;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff7b54, #ffb347);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        .seat {
+            display: inline-block;
+            margin-top: 18px;
+            background: white;
+            color: #e85d04;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .menu-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            color: #d94801;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+            border-top: 5px solid #ff7b54;
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item h3 {
+            color: #d94801;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .price {
+            color: #2a9d8f;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            background: #3d405b;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Delicious Bites Restaurant</h1>
-    <h2>Menu</h2>
-    <ul>
-        <li>Chicken Biryani - Rs. 350</li>
-        <li>Chicken Karahi - Rs. 800</li>
-        <li>Chicken Burger - Rs. 450</li>
-	<li>Pizza - Rs. 700</li>
-    </ul>
+
+    <header class="header">
+        <h1>Delicious Bites Restaurant</h1>
+        <p>Fresh Food • Great Taste • Happy Moments</p>
+        <div class="seat">Seat No: 25</div>
+    </header>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+
+        <div class="menu">
+
+            <div class="item">
+                <h3>Chicken Biryani</h3>
+                <p class="price">Rs. 350</p>
+            </div>
+
+            <div class="item">
+                <h3>Chicken Karahi</h3>
+                <p class="price">Rs. 800</p>
+            </div>
+
+            <div class="item">
+                <h3>Chicken Burger</h3>
+                <p class="price">Rs. 450</p>
+            </div>
+
+            <div class="item">
+                <h3>Pizza</h3>
+                <p class="price">Rs. 700</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Thank you for visiting Delicious Bites Restaurant!</p>
+    </footer>
+
 </body>
 </html>
